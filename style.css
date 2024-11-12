@@ -1,0 +1,421 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #008148;
+  --second-color: #1e3932;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+*::selection {
+  color: #fff;
+  background: var(--main-color);
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+  padding: 15px 10%;
+  transition: 0.2s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 145px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 11px 20px;
+  color: var(--second-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
+
+.beranda {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(img/Bg\ Final.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.beranda-text {
+  flex: 1 1 17rem;
+}
+
+.beranda-text span {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.beranda-text h1 {
+  font-size: 5rem;
+  color: var(--main-color);
+  font-weight: bolder;
+}
+
+.beranda-text h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--second-color);
+  text-transform: capitalize;
+  margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+  padding: 7px 16px;
+  border: 0.5px solid var(--second-color);
+  border-radius: 40px;
+  color: white;
+  font-weight: 500;
+  background: var(--main-color);
+}
+
+.btn:hover {
+  color: #fff;
+  background: #8fc53d;
+}
+
+/* Misi Kami */
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.misi .kami-img {
+  flex: 1 1 21rem;
+}
+
+.misi .kami-text {
+  flex: 1 1 21rem;
+}
+
+.misi .kami h2 {
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+
+.misi .kami-text p {
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+.misi .kami-text span {
+  font-style: italic;
+}
+
+/* Belanja */
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--second-color);
+}
+
+.heading h1 {
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+.belanja-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box {
+  position: relative;
+  box-shadow: 1px 4px 4px rgb(0, 0, 0, 0.1);
+  border-radius: 44px 4px 4px 4px;
+}
+
+.box .box-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 44px 4px 0 0;
+}
+
+.box .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box .box-img img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.title-price h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.box span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 12px;
+  color: var(--main-color);
+}
+
+.stars .bx {
+  color: var(--main-color);
+}
+
+.box .bx-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 7px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 4px 0 4px 0;
+  background: var(--main-color);
+}
+
+.box .bx-cart:hover {
+  background: #8fc53d;
+}
+
+/* Tentang */
+.tentang {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ebdbc8;
+  gap: 1.5rem;
+}
+
+.tentang-img {
+  flex: 1 1 17rem;
+}
+
+.tentang-text {
+  flex: 1 1 17rem;
+}
+
+.tentang-text h2 {
+  font-size: 1.2rem;
+  color: var(--second-color);
+}
+
+.tentang-text p {
+  margin: 0.5rem 0 1rem;
+  text-align: justify;
+}
+
+.kontak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social a {
+  font-size: 27px;
+  margin: 0.5rem;
+}
+
+.social a .bx {
+  padding: 5px;
+  color: #fff;
+  background: #000000;
+  border-radius: 50%;
+}
+
+.social a .bx:hover {
+  background: var(--main-color);
+}
+
+.links {
+  margin: 1rem 0 1rem;
+}
+
+.links a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--second-color);
+  padding: 1rem;
+}
+
+.links a:hover {
+  color: var(--main-color);
+}
+
+.kontak p {
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1150px) {
+  header {
+    padding: 18px 7%;
+  }
+  section {
+    padding: 50px 7%;
+  }
+  .home-text h1 {
+    font-size: 3rem;
+  }
+  .home-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+  }
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
+    border-top: 2px solid var(--main-color);
+    transition: 0.2s;
+    text-align: left;
+  }
+
+  .navbar.active {
+    top: 100%;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+    color: var(--second-color);
+  }
+
+  .home-text span {
+    font-size: 0.9rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.4rem;
+  }
+
+  .home-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-text {
+    padding-top: inherit;
+  }
+  .belanja-container .box {
+    margin-top: 6rem;
+  }
+  .heading h1 {
+    font-size: 1.5rem;
+  }
+  .heading span {
+    font-size: 0.9rem;
+  }
+  .tentang {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 364px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+}
